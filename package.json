@@ -1,6 +1,6 @@
 {
   "name": "get-file-details",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "A Node.js function which gathers basic details about a local file",
   "main": "dist/get-file-details.js",
   "types": "dist/get-file-details.d.ts",
