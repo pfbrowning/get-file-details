@@ -6,8 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx tsc",
-    "lint": "ts-standard",
-    "lint:fix": "ts-standard --fix",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
     "test": "tsc && node dist/test.js",
     "format": "prettier --list-different src/**/*.ts",
     "format:fix": "prettier --write src/**/*.ts",
@@ -33,8 +33,13 @@
   "homepage": "https://github.com/pfbrowning/get-file-details#readme",
   "devDependencies": {
     "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-unused-imports": "^3.1.0",
     "prettier": "^3.3.3",
-    "ts-standard": "^11.0.0",
     "typescript": "^4.5.2"
   },
   "dependencies": {
