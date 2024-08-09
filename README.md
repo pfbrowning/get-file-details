@@ -43,8 +43,3 @@ export interface FileDetail {
   lastModifiedISODateString: string;
 }
 ```
-
-## Backlog
-
-- Upgrade npm dependencies
-- Change to type module

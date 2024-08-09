@@ -1,6 +1,6 @@
 {
   "name": "get-file-details",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "A Node.js function which gathers basic details about a local file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,8 @@
     "format": "prettier --list-different src/**/*.ts",
     "format:fix": "prettier --write src/**/*.ts",
     "npm:login": "npm login",
-    "npm:publish": "npm publish"
+    "npm:pack": "npx tsc && npm pack",
+    "npm:publish": "npx tsc && npm publish"
   },
   "repository": {
     "type": "git",
