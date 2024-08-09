@@ -46,6 +46,5 @@ export interface FileDetail {
 
 ## Backlog
 
-- Configure eslint
-- npm audit
 - Upgrade npm dependencies
+- Change to type module
