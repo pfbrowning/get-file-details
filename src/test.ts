@@ -1,5 +1,4 @@
-import { getAllFileDetails } from "./functions/get-all-file-details";
-import getFileDetails from "./get-file-details";
+import { getAllFileDetails, getFileDetails } from "./functions";
 
 enum OperationType {
   getFileDetails,

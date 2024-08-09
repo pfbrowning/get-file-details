@@ -1,16 +1,18 @@
 {
   "name": "get-file-details",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A Node.js function which gathers basic details about a local file",
-  "main": "dist/get-file-details.js",
-  "types": "dist/get-file-details.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx tsc",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
     "test": "tsc && node dist/test.js",
     "format": "prettier --list-different src/**/*.ts",
-    "format:fix": "prettier --write src/**/*.ts"
+    "format:fix": "prettier --write src/**/*.ts",
+    "npm:login": "npm login",
+    "npm:publish": "npm publish"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 import { getAllFilesSync } from "get-all-files";
-import getFileDetails from "../get-file-details";
 import { FileDetail } from "../file-details";
+import { getFileDetails } from "./get-file-details";
 
 export const getAllFileDetails = (directory: string): FileDetail[] => {
   const allFilePaths = getAllFilesSync(directory).toArray();
