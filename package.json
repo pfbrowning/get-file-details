@@ -8,7 +8,9 @@
     "build": "npx tsc",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix",
-    "test": "tsc && node dist/test.js"
+    "test": "tsc && node dist/test.js",
+    "format": "prettier --list-different src/**/*.ts",
+    "format:fix": "prettier --write src/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,11 @@
   "homepage": "https://github.com/pfbrowning/get-file-details#readme",
   "devDependencies": {
     "@types/node": "^16.11.9",
+    "prettier": "^3.3.3",
     "ts-standard": "^11.0.0",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "get-all-files": "^5.0.0"
   }
 }
