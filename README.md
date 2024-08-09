@@ -45,8 +45,5 @@ export interface FileDetail {
 
 ## Backlog
 
-- Clean up export index
-- Reorganize directory structure
 - Update usage documentation
 - Configure eslint
-- Figure out a better way to test locally.
