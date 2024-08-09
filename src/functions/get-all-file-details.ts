@@ -1,5 +1,5 @@
 import { getAllFilesSync } from "get-all-files";
-import { FileDetail } from "../models/file-detail";
+import { type FileDetail } from "../models/file-detail";
 import { getFileDetails } from "./get-file-details";
 
 export const getAllFileDetails = (directory: string): FileDetail[] => {

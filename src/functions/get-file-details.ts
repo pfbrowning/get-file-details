@@ -1,6 +1,6 @@
 import * as fsPath from "path";
 import * as fs from "fs";
-import { FileDetail } from "../models/file-detail";
+import { type FileDetail } from "../models/file-detail";
 
 /**
  * Synchronously examines the file at the specified path
