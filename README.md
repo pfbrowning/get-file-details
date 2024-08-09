@@ -11,12 +11,13 @@ npm i get-file-details --save
 ## Usage
 
 ```
-import getFileDetails from 'get-file-details';
+import { getAllFileDetails, getFileDetails } from "get-file-details";
 
-const fileDetails = getFileDetails('path/to/your/file');
+const detailsForOneFile = getFileDetails('path/to/your/file');
+const detailsForManyFile = getAllFileDetails('path/to/your/directory');
 ```
 
-## File Details
+## File Detail
 
 This function queries and returns the most basic essential properties for querying and manipulating files. The naming convention used was inspired by [this Stackoverflow answer](https://stackoverflow.com/a/2235762).
 
@@ -45,5 +46,4 @@ export interface FileDetail {
 
 ## Backlog
 
-- Update usage documentation
 - Configure eslint
