@@ -1,12 +1,22 @@
-import getFileDetails from './get-file-details'
+import { getAllFileDetails } from "./functions/get-all-file-details";
+import getFileDetails from "./get-file-details";
 
-if (process.argv.length < 3) {
-  console.log('Pass the absolute path of the file that you want to test against as a parameter')
-  process.exit()
+enum OperationType {
+  getFileDetails,
+  getAllFileDetails,
 }
 
-const filePathArgument = process.argv[2]
+const operation: OperationType = OperationType.getAllFileDetails;
+const fileDetailsPath = "";
+const allFileDetailsPath = "";
 
-const details = getFileDetails(filePathArgument)
-
-console.log('output', details)
+switch (operation as OperationType) {
+  case OperationType.getFileDetails:
+    console.log("getFileDetails", getFileDetails(fileDetailsPath));
+    break;
+  case OperationType.getAllFileDetails:
+    console.log("getAllFileDetails", getAllFileDetails(allFileDetailsPath));
+    break;
+  default:
+    throw new Error("Unsupported operation type");
+}
