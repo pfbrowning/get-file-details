@@ -14,7 +14,7 @@ npm i get-file-details --save
 import { getAllFileDetails, getFileDetails } from "get-file-details";
 
 const detailsForOneFile = getFileDetails('path/to/your/file');
-const detailsForManyFile = getAllFileDetails('path/to/your/directory');
+const detailsForManyFiles = getAllFileDetails('path/to/your/directory');
 ```
 
 ## File Detail
